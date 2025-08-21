@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Öğrenci Yönetim Sistemi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Öğrenci Yönetim Sistemi</h1>
+
+  
+  <form id="ogrenciEkleForm">
+    <input type="number" id="id" placeholder="ID" required>
+    <input type="text" id="isim" placeholder="İsim" required>
+    <input type="text" id="soyisim" placeholder="Soyisim" required>
+    <input type="number" id="not" placeholder="Not" required>
+    <button type="submit">Ekle</button>
+  </form>
+
+  
+  <div>
+    <input type="number" id="silId" placeholder="Silinecek ID">
+    <button onclick="ogrenciSil()">Sil</button>
+  </div>
+
+  <div>
+    <input type="number" id="minNot" placeholder="Minimum Not">
+    <button onclick="notFiltrele()">Filtrele</button>
+  </div>
+
+  
+  <div>
+    <button onclick="ortalamaHesapla()">Ortalama Hesapla</button>
+  </div>
+
+  
+  <div>
+    <button onclick="jsonIslemleri()">JSON İşlemleri</button>
+  </div>
+
+  <h2>Öğrenci Listesi</h2>
+  <ul id="ogrenciListesi"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
